@@ -41,7 +41,9 @@
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <bsd/stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 long	flags;
 #define	TRANSPOSE	000001
