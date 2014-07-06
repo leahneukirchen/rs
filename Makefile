@@ -1,7 +1,8 @@
-CFLAGS = -Wall -O2 `pkg-config --cflags libbsd-overlay`
-LDFLAGS = `pkg-config --libs libbsd-overlay`
+CFLAGS = -Wall -O2
 
 all: rs
 
+rs: rs.o strtonum.o
+
 clean:
-	rm -f rs rs.o
+	rm -f rs *.o

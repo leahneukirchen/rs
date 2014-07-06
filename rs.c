@@ -44,6 +44,8 @@
 #include <string.h>
 #include <unistd.h>
 
+long long strtonum(const char *, long long, long long, const char **);
+
 long	flags;
 #define	TRANSPOSE	000001
 #define	MTRANSPOSE	000002
